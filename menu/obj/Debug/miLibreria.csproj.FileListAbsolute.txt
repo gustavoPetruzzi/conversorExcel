@@ -1,0 +1,5 @@
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\menu\bin\Debug\menu.dll
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\menu\bin\Debug\menu.pdb
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\menu\obj\Debug\miLibreria.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\menu\obj\Debug\menu.dll
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\menu\obj\Debug\menu.pdb

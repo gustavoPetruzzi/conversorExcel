@@ -1,0 +1,8 @@
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\bin\Debug\conversorExcel.exe.config
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\bin\Debug\conversorExcel.exe
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\bin\Debug\conversorExcel.pdb
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\bin\Debug\menu.dll
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\bin\Debug\menu.pdb
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\obj\Debug\conversorExcel.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\obj\Debug\conversorExcel.exe
+C:\Users\Gustavo\Desktop\Prog\c#\Conversor\conversorExcel\obj\Debug\conversorExcel.pdb
