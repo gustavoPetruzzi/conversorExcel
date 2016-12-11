@@ -16,6 +16,7 @@ namespace menu
         private String _path;
         private EBancos _banco;
         
+        
         public excelConversor(String archivo, EBancos banco)
         {
             this._path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\" + archivo;
@@ -41,7 +42,14 @@ namespace menu
         }
         private Excel.Workbook copiarColumna(Excel.Workbook original, Excel.Workbook nuevo, int columna, int desdeFila)
         {
+            Excel._Worksheet hojaOriginal = original.Sheets[1];
+            Excel._Worksheet hojaNuevo = nuevo.Sheets[1];
+            Excel.Range rangoOriginal = hojaOriginal.UsedRange;
+            int cantidadFilas = rangoOriginal.Rows.Count;
+            for (int i = 2; i < cantidadFilas; i++)
+            {
 
+            }
             return nuevo;
         }
     }
