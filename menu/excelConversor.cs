@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excel = Microsoft.Office.Interop.Excel;
-namespace menu
+namespace miLibreria
 {
     public enum EBancos
     {
@@ -14,33 +14,58 @@ namespace menu
     public class excelConversor
     {
         private String _path;
-        private EBancos _banco;
-        
-        
-        public excelConversor(String archivo, EBancos banco)
+        private String _archivoOriginal;
+        private String _archivoNuevo;
+
+        public excelConversor(String archivoOriginal, String archivoNuevo)
         {
-            this._path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\" + archivo;
+            this._path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            this._archivoNuevo = archivoNuevo;
+            this._archivoOriginal = archivoOriginal;
             
-            this._banco = banco;
         }
-        public void copiarDatos()
+        public Boolean copiarDatos(EBancos banco)
         {
             Excel.Application excelApp = new Excel.Application();
-            Excel.Workbook original = excelApp.Workbooks.Open(this._path);
-            Excel.Workbook nuevo = excelApp.Workbooks.Add();
-            switch (this._banco)
-            {
-                case EBancos.cmf:
 
-                    break;
-                case EBancos.otro:
-                    break;
-                default:
-                    break;
+            String fechaHoy = String.Format("{0:dd-MM-yy}", DateTime.Now.Date);
+            try
+            {
+                Excel.Workbook original = excelApp.Workbooks.Open(this._path + "\\" + this._archivoOriginal);
+                Excel.Workbook nuevo = excelApp.Workbooks.Open(this._path + "\\" + this._archivoNuevo);
+                switch (banco)
+                {
+                    case EBancos.cmf:
+                        this.copiarColumna(original, nuevo, 1, 1, 2);
+                        this.copiarColumna(original, nuevo, 2, 2, 2);
+                        this.copiarColumna(original, nuevo, 3, 3, 2);
+                        this.copiarColumna(original, nuevo, 4, 5, 2);
+                        this.copiarColumna(original, nuevo, 5, 4, 2);
+                        break;
+                    case EBancos.otro:
+                        break;
+                    default:
+                        break;
+                }
+                original.Save();
+                nuevo.SaveAs(this._path + "\\" + fechaHoy+ this._archivoOriginal );
+                return true;
+                
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+                
+            }
+            finally
+            {
+                excelApp.Quit();
+            }
+            
 
         }
-        private Excel.Workbook copiarColumna(Excel.Workbook original, Excel.Workbook nuevo, int columna, int desdeFila)
+        private Excel.Workbook copiarColumna(Excel.Workbook original, Excel.Workbook nuevo, int columnaOriginal, int columnaNueva, int desdeFila)
         {
             Excel._Worksheet hojaOriginal = original.Sheets[1];
             Excel._Worksheet hojaNuevo = nuevo.Sheets[1];
@@ -48,7 +73,8 @@ namespace menu
             int cantidadFilas = rangoOriginal.Rows.Count;
             for (int i = 2; i < cantidadFilas; i++)
             {
-
+                hojaNuevo.Cells[desdeFila, columnaNueva] = hojaOriginal.Cells[i, columnaOriginal];
+                desdeFila++;
             }
             return nuevo;
         }
