@@ -9,3 +9,6 @@ C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\menu\obj\Debug\menu.dll
 C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\menu\obj\Debug\menu.pdb
 C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\menu\bin\Debug\menu.dll
 C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\menu\bin\Debug\menu.pdb
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\menu\obj\Debug\ResolveAssemblyReference.cache
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\menu\obj\Debug\menu.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\menu\obj\Debug\menu.pdb

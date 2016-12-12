@@ -9,6 +9,7 @@ namespace miLibreria
     public enum EBancos
     {
         cmf,
+        finansur,
         otro
     }
     public class excelConversor

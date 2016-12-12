@@ -14,3 +14,24 @@ C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\conversorExcel\bin\Debug
 C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\conversorExcel\bin\Debug\menu.dll
 C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\conversorExcel\bin\Debug\menu.pdb
 C:\Users\Gustavo\Desktop\programacion\c#\conversorExcel\conversorExcel\obj\Debug\conversorExcel.csprojResolveAssemblyReference.cache
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\conversorExcel.exe.config
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\conversorExcel.exe
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\conversorExcel.pdb
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\menu.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\mscorlib.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\System.Data.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\System.Transactions.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\System.EnterpriseServices.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\System.Web.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\System.Data.OracleClient.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\menu.pdb
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\es\mscorlib.resources.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\normidna.nlp
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\normnfc.nlp
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\normnfd.nlp
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\normnfkc.nlp
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\normnfkd.nlp
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\bin\Debug\System.EnterpriseServices.Wrapper.dll
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\obj\Debug\ResolveAssemblyReference.cache
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\obj\Debug\conversorExcel.exe
+I:\Documents and Settings\Gustavo\Escritorio\C#\conversorExcel\conversorExcel\obj\Debug\conversorExcel.pdb
