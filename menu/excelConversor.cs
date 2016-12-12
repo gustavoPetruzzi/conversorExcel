@@ -37,11 +37,15 @@ namespace miLibreria
                 switch (banco)
                 {
                     case EBancos.cmf:
-                        this.copiarColumna(original, nuevo, 1, 1, 2);
-                        this.copiarColumna(original, nuevo, 2, 2, 2);
-                        this.copiarColumna(original, nuevo, 3, 3, 2);
-                        this.copiarColumna(original, nuevo, 4, 5, 2);
-                        this.copiarColumna(original, nuevo, 5, 4, 2);
+                        
+                        break;
+                    case EBancos.finansur:
+                        this.copiarColumna(original, nuevo, 2, 1, 7);
+                        this.copiarColumna(original, nuevo, 1, 2, 7);
+                        this.copiarColumna(original, nuevo, 7, 3, 7);
+                        this.copiarColumna(original, nuevo, 8, 4, 7);
+                        this.copiarColumna(original, nuevo, 5, 5, 7);
+                        this.copiarColumna(original, nuevo, 4, 6, 7);
                         break;
                     case EBancos.otro:
                         break;
