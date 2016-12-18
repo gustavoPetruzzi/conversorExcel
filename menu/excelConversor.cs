@@ -37,7 +37,15 @@ namespace miLibreria
                 switch (banco)
                 {
                     case EBancos.cmf:
-                        
+                        original = this.formatColumn(original, 7);
+                        this.copiarColumna(original, nuevo, 2, 5, 2);
+                        this.copiarColumna(original, nuevo, 3, 6, 2);
+                        this.copiarColumna(original, nuevo, 10, 7, 2);
+                        this.copiarColumna(original, nuevo, 11, 8, 2);
+                        this.copiarColumna(original, nuevo, 6, 9, 2);
+                        this.copiarColumna(original, nuevo, 7, 10, 2);
+                        this.copiarColumna(original, nuevo, 8, 11, 2);
+                        this.copiarColumna(original, nuevo, 9, 12, 2);
                         break;
                     case EBancos.finansur:
                         this.copiarColumna(original, nuevo, 2, 1, 7);
@@ -82,6 +90,19 @@ namespace miLibreria
                 desdeFila++;
             }
             return nuevo;
+        }
+        private Excel.Workbook formatColumn(Excel.Workbook original, int columna)
+        {
+            Excel._Worksheet hojaOriginal = original.Sheets[1];
+            hojaOriginal.Cells[1, 4].EntireColumn.NumberFormat = "####-##-##";
+            Excel.Range rangoOriginal = hojaOriginal.UsedRange;
+            int cantidadFilas = rangoOriginal.Rows.Count;
+            for (int i = 2; i < cantidadFilas; i++)
+            {
+                hojaOriginal.Cells[i, columna].value2 = int.Parse(hojaOriginal.Cells[i, columna].value2);
+            }
+
+            return original;
         }
     }
 }
